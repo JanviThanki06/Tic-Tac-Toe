@@ -221,4 +221,8 @@ sub prompt {
     print "Enter square no. (legal moves are ", join(',', @_), "):\n";
 }
 
+sub syntax {
+    print "Illegal move: $_[0]\n";
+}
+
 &play;
